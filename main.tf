@@ -180,12 +180,11 @@ resource "aws_route_table" "db_rt2" {
     "Name"              = var.rt_name5
   }
 }
-resource "aws_route_table_association" "RTA5" {
+resource "aws_route_table_association" "RTA6" {
   subnet_id             = aws_subnet.dbsubnet2.id
   route_table_id        = aws_route_table.db_rt2.id
 }
 
-# create security groups 
 
  
 
